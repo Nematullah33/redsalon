@@ -81,7 +81,12 @@ class ServicesaleController extends Controller
     }
 
     public function store(Request $request){  
-        
+        $invoice = Servicesale::where('invoice_id',$request->invoice_id)->exists();
+        if($invoice){
+            return response()->json([
+                'status'=>false
+            ]);
+        }
         $px=DB::getTablePrefix();
         $customer_id=$request->input('cmbCustomer');
        
@@ -184,6 +189,17 @@ class ServicesaleController extends Controller
         Servicesale::where('id', $id)
         ->update(['status_id' => $status]);
         //return back()->with('success', 'status update successfully');
+    }
+    public function checkInvoice(Request $req){
+        $invoice = Servicesale::where('invoice_id',$req->invoice_id)->exists();
+        if($invoice){
+            return response()->json([
+                'status'=>true
+            ]);
+        }
+        return response()->json([
+            'status'=>false
+        ]);
     }
     
 }

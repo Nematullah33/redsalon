@@ -95,7 +95,9 @@
                                                 <input type="text" name='invoice_id' id="invoice_id" style="border-radius:40px;width:100px;"
                                                     class="form-control form-control-round"
                                                     value="">
+                                                    
                                             </td>
+                                            <p id="invoice-alert" class="text-danger p-2"></p>
                                         </tr>
                                         
                                         <tr>
@@ -337,6 +339,7 @@ $(function() {
     $("#paymentType").select2();
     $("#cmbDiscount").select2();
     // Read selected option
+
     $("#cmbCustomer").on("change", function() {
 
         let customer_id = $(this).val();
@@ -408,7 +411,25 @@ $(function() {
     });
 
     printCart();
+    $("#invoice_id").on("keyup", function() {
 
+        let invoice_id = $(this).val();
+        //console.log(invoice_id);
+        $.ajax({
+            url: "{{url('check-invoice')}}",
+            type: "get",
+            data: {
+                "invoice_id": invoice_id 
+            },
+            success: function(res) {
+                if(res.status == true){
+                    $('#invoice-alert').html('Invoice ID already exists!!');
+                }else{
+                    $('#invoice-alert').html('');
+                }
+            }
+        });
+    });
     //Save into database table
     $("#btnProcessOrder").on("click", function(e) {
         e.preventDefault();
@@ -478,7 +499,10 @@ $(function() {
                         
                     },
                     success: function(res) {
-                        
+                        if(res.status == false){
+                            $('#select-alert').html('Invoice ID already exists!!');
+                            return false;
+                        }
                         console.log(res.view);
                         var win = window.open("","_top");
                         win.document.write(res.view);

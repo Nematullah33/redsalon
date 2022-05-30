@@ -82,7 +82,14 @@ class OrderController extends Controller
     }
 
     public function store(Request $request){
-        
+        $invoice = Order::where('invoice_id',$request->invoice_id)->exists();
+        if($invoice){
+            return response()->json([
+                'status'=>false
+            ]);
+
+        }
+
         $px=DB::getTablePrefix();
         $customer_id=$request->input('cmbCustomer');
         $invoice_id=$request->invoice_id;
@@ -212,6 +219,18 @@ class OrderController extends Controller
         Order::where('id', $id)
         ->update(['status_id' => $status]);
         //return back()->with('success', 'status update successfully');
+    }
+    public function checkInvoice(Request $req){
+        $invoice = Order::where('invoice_id',$req->invoice_id)->exists();
+        if($invoice){
+            return response()->json([
+                'status'=>true
+            ]);
+
+        }
+        return response()->json([
+            'status'=>false
+        ]);
     }
     
 }

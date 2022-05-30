@@ -172,4 +172,6 @@ Route::group(['middleware' => ['admin']], function(){
     Route::get('payment/delete', [PaymentController::class,'paymentDelete'])->name('payment.delete');
     Route::get('purch/delete', [PurchaseController::class,'purchDelete'])->name('purchase.delete');
     Route::get('menu/delete', [PurchaseController::class,'menuDelete'])->name('menu.delete');
+    Route::get('check-invoice', [OrderController::class,'checkInvoice'])->name('check.invoice');
+    Route::get('check-service-invoice', [ServicesaleController::class,'checkInvoice'])->name('check.service.invoice');
 });

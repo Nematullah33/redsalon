@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::t8cLb9IyimBhIbN4',
+            '_route' => 'generated::aFKsjME41I1kyhhG',
           ),
           1 => NULL,
           2 => 
@@ -44,7 +44,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QRlmVH9dmY8dhI0n',
+            '_route' => 'generated::xEyxNnbgQ8jY4wyp',
           ),
           1 => NULL,
           2 => 
@@ -274,7 +274,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::dshKEzQQLarTEY0F',
+            '_route' => 'generated::1SGo7CncdJQ7T4jO',
           ),
           1 => NULL,
           2 => 
@@ -293,7 +293,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::8Ej0bUFcPShWfM19',
+            '_route' => 'generated::9TydcXWQUjrQkvWf',
           ),
           1 => NULL,
           2 => 
@@ -312,7 +312,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::vgpQb7L4CrZLAYLr',
+            '_route' => 'generated::h6dLQml4FtpmV94k',
           ),
           1 => NULL,
           2 => 
@@ -1031,7 +1031,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::95GC3FSKTOS72S2D',
+            '_route' => 'generated::liz88GASvuQpVhrJ',
           ),
           1 => NULL,
           2 => 
@@ -1070,7 +1070,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::mdnN9CtnPU6zMoyg',
+            '_route' => 'generated::65zHaYnsRCmggQO4',
           ),
           1 => NULL,
           2 => 
@@ -2651,6 +2651,46 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'menu.delete',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/check-invoice' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'check.invoice',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/check-service-invoice' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'check.service.invoice',
           ),
           1 => NULL,
           2 => 
@@ -4645,7 +4685,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::t8cLb9IyimBhIbN4' => 
+    'generated::aFKsjME41I1kyhhG' => 
     array (
       'methods' => 
       array (
@@ -4666,7 +4706,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::t8cLb9IyimBhIbN4',
+        'as' => 'generated::aFKsjME41I1kyhhG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4682,7 +4722,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QRlmVH9dmY8dhI0n' => 
+    'generated::xEyxNnbgQ8jY4wyp' => 
     array (
       'methods' => 
       array (
@@ -4702,7 +4742,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::QRlmVH9dmY8dhI0n',
+        'as' => 'generated::xEyxNnbgQ8jY4wyp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5116,7 +5156,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::dshKEzQQLarTEY0F' => 
+    'generated::1SGo7CncdJQ7T4jO' => 
     array (
       'methods' => 
       array (
@@ -5137,7 +5177,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::dshKEzQQLarTEY0F',
+        'as' => 'generated::1SGo7CncdJQ7T4jO',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5153,7 +5193,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::8Ej0bUFcPShWfM19' => 
+    'generated::9TydcXWQUjrQkvWf' => 
     array (
       'methods' => 
       array (
@@ -5174,7 +5214,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::8Ej0bUFcPShWfM19',
+        'as' => 'generated::9TydcXWQUjrQkvWf',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5190,7 +5230,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::vgpQb7L4CrZLAYLr' => 
+    'generated::h6dLQml4FtpmV94k' => 
     array (
       'methods' => 
       array (
@@ -5212,7 +5252,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::vgpQb7L4CrZLAYLr',
+        'as' => 'generated::h6dLQml4FtpmV94k',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8052,7 +8092,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::95GC3FSKTOS72S2D' => 
+    'generated::liz88GASvuQpVhrJ' => 
     array (
       'methods' => 
       array (
@@ -8074,7 +8114,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::95GC3FSKTOS72S2D',
+        'as' => 'generated::liz88GASvuQpVhrJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8127,7 +8167,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::mdnN9CtnPU6zMoyg' => 
+    'generated::65zHaYnsRCmggQO4' => 
     array (
       'methods' => 
       array (
@@ -8149,7 +8189,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::mdnN9CtnPU6zMoyg',
+        'as' => 'generated::65zHaYnsRCmggQO4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -13167,6 +13207,82 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'menu.delete',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'check.invoice' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'check-invoice',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\OrderController@checkInvoice',
+        'controller' => 'App\\Http\\Controllers\\OrderController@checkInvoice',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'check.invoice',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'check.service.invoice' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'check-service-invoice',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ServicesaleController@checkInvoice',
+        'controller' => 'App\\Http\\Controllers\\ServicesaleController@checkInvoice',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'check.service.invoice',
       ),
       'fallback' => false,
       'defaults' => 

@@ -96,6 +96,7 @@
                                                     class="form-control form-control-round"
                                                     value="">
                                             </td>
+                                            <p id="invoice-alert" class="text-danger p-2"></p>
                                         </tr>
                                         
                                         <tr>
@@ -456,6 +457,24 @@ $(function() {
 
     printCart();
 
+    $("#invoice_id").on("keyup", function() {
+
+        let invoice_id = $(this).val();
+        $.ajax({
+            url: "{{url('check-service-invoice')}}",
+            type: "get",
+            data: {
+                "invoice_id": invoice_id 
+            },
+            success: function(res) {
+                if(res.status == true){
+                    $('#invoice-alert').html('Invoice ID already exists!!');
+                }else{
+                    $('#invoice-alert').html('');
+                }
+            }
+        });
+    });
     //Save into database table
     $("#btnProcessOrder").on("click", function(e) {
         e.preventDefault();
@@ -526,6 +545,10 @@ $(function() {
                             
                         },
                         success: function(res) {
+                            if(res.status == false){
+                                $('#select-alert').html('Invoice ID already exists!!');
+                                return false;
+                            }
                             //console.log(res);
                             var win = window.open("","_top");
                             win.document.write(res.view);
